@@ -3,6 +3,47 @@ entries:
   all-in-one:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-03-21T19:07:39.149029979Z"
+    dependencies:
+    - alias: idsdaps
+      condition: install.daps
+      name: ids-daps
+      repository: file://./omejdn
+      version: 0.0.1
+    - alias: vault
+      condition: install.vault
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.20.0
+    - alias: plato-postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    - alias: sokrates-postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    - alias: backend
+      condition: install.backendservice
+      name: backend-service
+      repository: https://denisneuling.github.io/cx-backend-service
+      version: 0.0.6
+    - alias: minio
+      condition: install.minio
+      name: minio
+      repository: https://charts.min.io
+      version: 4.1.0
+    description: A Helm chart for Kubernetes
+    digest: c1ac345d859f6acc6b5abfdfdc94e92072597f206666256eb957deee0a702386
+    name: all-in-one
+    type: application
+    urls:
+    - https://github.com/DataFabriQ/cxcharts/releases/download/all-in-one-0.4.0/all-in-one-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-03-21T18:48:06.213023004Z"
     dependencies:
     - alias: idsdaps
@@ -42,4 +83,15 @@ entries:
     urls:
     - https://github.com/DataFabriQ/cxcharts/releases/download/all-in-one-0.1.0/all-in-one-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-21T18:48:06.213031304Z"
+  tractusx-connector:
+  - apiVersion: v2
+    appVersion: 0.3.0
+    created: "2023-03-21T19:07:39.305494869Z"
+    description: A Helm chart for Tractus-X Eclipse Data Space Connector
+    digest: 48beae9135a4f68c0dfcbbda03ca07f90d3db6bb90e4ffafb5ff853530be27da
+    name: tractusx-connector
+    type: application
+    urls:
+    - https://github.com/DataFabriQ/cxcharts/releases/download/tractusx-connector-0.4.0/tractusx-connector-0.4.0.tgz
+    version: 0.4.0
+generated: "2023-03-21T19:07:39.305533168Z"
