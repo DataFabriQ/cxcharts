@@ -1,0 +1,56 @@
+apiVersion: v1
+entries:
+  all-in-one:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-21T19:16:21.390412727Z"
+    dependencies:
+    - alias: idsdaps
+      condition: install.daps
+      name: ids-daps
+      repository: file://./omejdn
+      version: 0.0.1
+    - alias: vault
+      condition: install.vault
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.20.0
+    - alias: plato-postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    - alias: sokrates-postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    - alias: backend
+      condition: install.backendservice
+      name: backend-service
+      repository: https://denisneuling.github.io/cx-backend-service
+      version: 0.0.6
+    - alias: minio
+      condition: install.minio
+      name: minio
+      repository: https://charts.min.io
+      version: 4.1.0
+    description: A Helm chart for Kubernetes
+    digest: 99c15493e2be800c7689e31f0d4fc66dcbe061f7a0416930d59b94a16c0ab2a3
+    name: all-in-one
+    type: application
+    urls:
+    - https://github.com/DataFabriQ/cxcharts/releases/download/all-in-one-0.5.0/all-in-one-0.5.0.tgz
+    version: 0.5.0
+  tractusx-connector:
+  - apiVersion: v2
+    appVersion: 0.3.0
+    created: "2023-03-21T19:16:21.558074407Z"
+    description: A Helm chart for Tractus-X Eclipse Data Space Connector
+    digest: c27244ca401b95e57f99c3c8627691d01f986657335e1bbe65f1f459c24b6a40
+    name: tractusx-connector
+    type: application
+    urls:
+    - https://github.com/DataFabriQ/cxcharts/releases/download/tractusx-connector-0.5.0/tractusx-connector-0.5.0.tgz
+    version: 0.5.0
+generated: "2023-03-21T19:16:21.558087907Z"
