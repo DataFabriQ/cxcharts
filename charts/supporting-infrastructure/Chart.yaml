@@ -28,7 +28,7 @@ dependencies:
   # IDS Dynamic Attribute Provisioning Service (IAM)
   - name: ids-daps
     version: 0.0.1
-    repository: "file://../omejdn"
+    repository: "file://./omejdn"
     alias: idsdaps
     condition: install.daps
 
