@@ -8,7 +8,7 @@ install:
   postgresql: true
   vault: true
   minio: true
-  backendservice: true
+  backendservice: false
 
 ###################
 # Backend Service #
